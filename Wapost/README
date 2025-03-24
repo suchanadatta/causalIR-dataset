@@ -1,0 +1,11 @@
+# This is the initial code to index and search the dataset for TREC ToT tasks.
+
+
+### To setup
+mvn install
+
+### To index
+mvn clean
+mvn compile
+mvn exec:java -Dexec.mainClass="org.indexer.WapoIndex" -Dexec.args="path-to-the-index path-to-the-json-file"
+
